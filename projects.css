@@ -1,0 +1,91 @@
+body {
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #1c1c1c;
+  padding: 15px 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links li a.active {
+  color: #00aaff;
+}
+
+/* Projects section */
+.projects-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projects-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Project cards */
+.project-card {
+  background-color: #1e1e1e;
+  border-left: 5px solid #f004a2;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(255, 0, 128, 0.2);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  color: #f004a2;
+  font-size: 24px;
+}
+
+.project-card p {
+  margin: 10px 0 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+/* Button styles */
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.demo {
+  background-color: red;
+}
+
+.github {
+  background-color: #444;
+}
