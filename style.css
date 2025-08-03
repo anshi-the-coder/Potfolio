@@ -31,7 +31,7 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
-  /* margin-left: auto; 👈 Pushes links to the right */
+  /* margin-left: auto;  */
 }
 
 .nav-links a {
