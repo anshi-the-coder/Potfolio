@@ -8,8 +8,12 @@ body {
 
 /* Navigation */
 .navbar {
-  background-color: #1c1c1c;
-  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
 }
 
 .nav-links {
@@ -20,17 +24,19 @@ body {
   margin: 0;
 }
 
-.nav-links li a {
+.nav-links a {
+ text-decoration: none;
   color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+   font-weight: 400;              /* Normal weight */
+  font-family: 'Segoe UI', sans-serif;  /* Normal font */
+  text-transform: none; 
 }
 
-.nav-links li a.active {
-  color: #00aaff;
+.nav-links a:hover {
+  color: #58a6ff;
 }
-
 /* Projects section */
 .projects-section {
   padding: 40px 20px;
@@ -46,7 +52,7 @@ body {
 /* Project cards */
 .project-card {
   background-color: #1e1e1e;
-  border-left: 5px solid #f004a2;
+  border-left: 5px solid   cyan;
   padding: 20px 30px;
   margin-bottom: 20px;
   border-radius: 8px;
@@ -55,7 +61,7 @@ body {
 
 .project-card h2 {
   margin-top: 0;
-  color: #f004a2;
+  color:   cyan;
   font-size: 24px;
 }
 
@@ -83,7 +89,7 @@ body {
 }
 
 .demo {
-  background-color: red;
+  background-color: gold;
 }
 
 .github {

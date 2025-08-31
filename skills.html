@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="skills.css">
+  <style>
+    /* Navbar full width styling */
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar moved outside wrapper for full width -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" href="skills.html">Skills</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+    <header>
+      <div>
+        <h1>Skills</h1>
+        <p class="lead">A quick overview of my technical skills & fundamentals — ready to use in projects and interviews.</p>
+      </div>
+      <div class="level"></div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Programming Languages</h2>
+        <div class="skill">
+          <div class="meta">
+            <div class="name">Java Basics</div>
+            <div class="sub">OOP, core libraries, basic streams</div>
+          </div>
+          <div class="progress" style="--p:78%"><i></i></div>
+        </div>
+        <div class="skill">
+          <div class="meta">
+            <div class="name">JavaScript</div>
+            <div class="sub">ES6+, DOM, async, browser APIs</div>
+          </div>
+          <div class="progress" style="--p:82%"><i></i></div>
+        </div>
+        <div class="skill">
+          <div class="meta">
+            <div class="name">SQL</div>
+            <div class="sub">Queries, joins, normalization</div>
+          </div>
+          <div class="progress" style="--p:70%"><i></i></div>
+        </div>
+        <div class="skill">
+          <div class="meta">
+            <div class="name">Python(Basics)</div>
+            <div class="sub">Scripting, data handling, Jupyter</div>
+          </div>
+          <div class="progress" style="--p:68%"><i></i></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Fundamentals</h2>
+        <div class="skill">
+          <div class="meta">
+            <div class="name">Object Oriented Programming</div>
+            <div class="sub">Design, encapsulation, inheritance</div>
+          </div>
+          <div class="progress" style="--p:80%"><i></i></div>
+        </div>
+        <div class="skill">
+          <div class="meta">
+            <div class="name">Data Structures & Algorithms (Basics)</div>
+            <div class="sub">Arrays, linked lists, sorting, basic DSA</div>
+          </div>
+          <div class="progress" style="--p:72%"><i></i></div>
+        </div>
+        <div class="skill">
+          <div class="meta">
+            <div class="name">DBMS</div>
+            <div class="sub">ER modeling, transactions</div>
+          </div>
+          <div class="progress" style="--p:74%"><i></i></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Technologies & Tools</h2>
+        <div class="tags">
+          <span class="tag">React.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Bootstrap</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">Jupyter</span>
+          <span class="tag">VSCode</span>
+        </div>
+        <div style="margin-top:14px">
+          <div style="font-weight:600;margin-bottom:8px">Highlights</div>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Built frontend projects using React.js with modular components.</li>
+            <li>Implemented backend APIs with Node.js and MongoDB/MySQL.</li>
+            <li>Familiar with Git workflows and REST testing in Postman.</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <div>Want this as a React component or a printable PDF? I can convert it.</div> -->
+      <div style="color:var(--muted);font-size:0.85rem">Made with ❤️ by Anshika</div>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+      document.querySelectorAll('.progress').forEach(p=>{
+        const inner = p.querySelector('i');
+        const target = getComputedStyle(p).getPropertyValue('--p') || '0%';
+        inner.style.width = '0%';
+        setTimeout(()=> inner.style.width = target.trim(), 60);
+      })
+    })
+  </script>
+</body>
+</html>

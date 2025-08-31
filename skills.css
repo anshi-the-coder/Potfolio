@@ -1,0 +1,168 @@
+/* General layout */
+body {
+  background-color: #000; /* Matches dark theme */
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding-left: 0;
+  margin: 0;
+}
+.nav-links li a {
+       text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+   font-weight: 400;              /* Normal weight */
+  font-family: 'Segoe UI', sans-serif;  /* Normal font */
+  text-transform: none; 
+}
+
+.nav-links a:hover {
+  color: #58a6ff;
+}
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
+ 
+
+/* .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links li a.active {
+  color: #00aaff;
+} */
+
+
+/* Page header */
+/* header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+} */
+
+.lead {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.level {
+  font-size: 0.85rem;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+/* Grid for skills */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  background: #0d0d0d;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid rgba(0,255,255,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Section titles */
+.card h2 {
+  color: cyan;
+  font-size: 1.2rem;
+  margin-bottom: 14px;
+}
+
+/* Skill item */
+.skill {
+  margin-bottom: 16px;
+}
+
+.skill .name {
+  color: gold;
+  font-weight: bold;
+}
+
+.skill .sub {
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+/* Progress bar */
+.progress {
+  background: #333;
+  border-radius: 6px;
+  height: 6px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.progress i {
+  display: block;
+  background: cyan;
+  height: 100%;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: #222;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+/* Highlights list */
+ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.9rem;
+}
